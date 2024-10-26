@@ -1,7 +1,7 @@
 import math
 from collections import Counter
 
-# Diccionario para convertir direcciones del viento a grados
+# Diccionario para la conversion de  direcciones del viento a grados
 direcciones_viento = {
     "N": 0, "NNE": 22.5, "NE": 45, "ENE": 67.5, "E": 90,
     "ESE": 112.5, "SE": 135, "SSE": 157.5, "S": 180,
@@ -9,7 +9,7 @@ direcciones_viento = {
     "WNW": 292.5, "NW": 315, "NNW": 337.5
 }
 
-# Diccionario inverso para convertir grados a direcciones
+# Diccionario inverso 
 grados_a_direccion = {v: k for k, v in direcciones_viento.items()}
 
 
@@ -36,7 +36,7 @@ class DatosMeteorologicos:
                     velocidad_viento = float(partes[17].split(',')[0])
                     direccion_viento = partes[17].split(',')[1].strip()
 
-                    # Agregar a las listas correspondientes
+                    # Agregar a las listas 
                     temperaturas.append(temperatura)
                     humedades.append(humedad)
                     presiones.append(presion)
